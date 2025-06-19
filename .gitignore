@@ -10,7 +10,7 @@
 !pubspec.yaml
 !analysis_options.yaml
 !README.md
-
+!backend_README.md
 # Track the lib folder (your source code)
 !lib/
 !lib/**
