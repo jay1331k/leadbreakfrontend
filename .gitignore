@@ -1,0 +1,91 @@
+# ==============================================================================
+# AGGRESSIVE GITIGNORE - Only track lib/ folder and essential config files
+# ==============================================================================
+
+# Ignore everything by default
+*
+
+# But DO track these essential files and folders
+!.gitignore
+!pubspec.yaml
+!analysis_options.yaml
+!README.md
+
+# Track the lib folder (your source code)
+!lib/
+!lib/**
+
+# Track test folder
+!test/
+!test/**
+
+# Optionally track assets if you have them
+!assets/
+!assets/**
+
+# Track some essential config files you might need
+!firebase_options.dart
+!.metadata
+
+# ==============================================================================
+# SPECIFIC IGNORES (in case files are explicitly added)
+# ==============================================================================
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VS Code (you can uncomment if you don't want to track VS Code settings)
+.vscode/
+
+# Flutter/Dart/Pub related - All ignored by default with '*' above
+# But listed here for reference
+# **/doc/api/
+# **/ios/Flutter/.last_build_id
+# .dart_tool/
+# .flutter-plugins
+# .flutter-plugins-dependencies
+# .packages
+# .pub-cache/
+# .pub/
+# /build/
+# pubspec.lock
+
+# Platform folders - All ignored by default
+# android/
+# ios/
+# linux/
+# macos/
+# windows/
+# web/
+
+# Build artifacts - All ignored by default
+# build/
+# coverage/
+
+# Firebase debug files - All ignored by default
+# .firebase/
+# firebase-debug.log
+# firestore-debug.log
+
+# Environment and local files - All ignored by default
+# .env*
+# local.properties
+# .gradle/
+# .signing/
